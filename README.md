@@ -4,7 +4,7 @@
 
 Submitted by: Claude Yan
 
-Time spent: 3 hours spent in total
+Time spent: 5 hours spent in total
 
 Link to project: (insert your link here, should start with https://glitch.com...)
 
@@ -42,9 +42,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 - Setting number of strikes + Setting number of rounds + Playing and winning game + Match history
-![http://g.recordit.co/vjQHKSPF5f.gif]
+<img src="http://g.recordit.co/vjQHKSPF5f.gif" width=200><br>
 - Letting timer run out and losing
-![http://g.recordit.co/FMCNBST3y4.gif]
+<img src="http://g.recordit.co/FMCNBST3y4.gif" width=200><br>
 
 
 ## Reflection Questions
