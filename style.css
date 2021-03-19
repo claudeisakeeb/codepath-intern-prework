@@ -1,0 +1,103 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: purple;
+}
+
+/* Game title */
+#gameHeader {
+  font-family: verdana, arial, sans-serif;
+  color: #e1eb34;
+}
+
+/* Game instructions */
+#gameIntro {
+  color: white;
+}
+
+.user-input {
+  display: flex;
+}
+
+.user-input-label {
+  color: white;
+  margin: 0 5px 0 0;
+}
+
+#timer, #timer-label {
+  font-size: 20px;
+  color: white;
+}
+
+.ButtonsAndTimer > button {
+  background-color: yellow;
+  color: purple;
+  border: 2px solid black;
+}
+
+/* All buttons */
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Only the 4 game buttons */
+#gameButtonArea > button, img {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+/* Stop button */
+.hidden {
+  display: none;
+}
+
+/* First button */
+#button1:active, #button1.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+/* Second button */
+#button2:active, #button2.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+
+/* Third button */
+#button3:active, #button3.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+
+/* Fourth button */
+#button4:active, #button4.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+/* Fifth button */
+#button5:active, #button5.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+/* Sixth button */
+#button6:active, #button6.lit {
+  content:url("https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fstar.png?v=1615943509109");
+  background-color: yellow;
+}
+
+#match-history {
+  color: white;
+}
+#match-history th {
+  border: 1px solid white;
+}
+
+
