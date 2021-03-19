@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1 id="gameHeader">Light and Sound Memory Game</h1>
+    
+    <p id="gameIntro">
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+    
+    <div class="user-input-section">
+      <div class="user-input">
+        <p class="user-input-label">
+           Number of strikes: 
+        </p>
+        <input id="strikes-input" type="number" placeholder="Enter number of strikes..." value="3" onchange="setStrikes()"/>
+      </div>
+      <br />
+      <div class="user-input">
+        <p class="user-input-label">
+           Number of rounds: 
+        </p>
+        <input id="rounds-input" type="number" placeholder="Enter number of rounds..." value="8" onchange="setNumRounds()" />
+      </div>
+    </div>
+    
+    <div class="ButtonsAndTimer">
+      <br />
+      <button onclick="startGame()" id="startButton">
+        Start
+      </button>
+      <button onclick="stopGame()" id="stopButton" class="hidden">
+        Stop
+      </button>
+      <span id="timer">10</span>
+      <span id="timer-label">seconds left</span>
+    </div>
+    
+    <div id="gameButtonArea">
+      <img id="button1" onclick="guess(1)" onmousedown="playSound(1)" onmouseup="stopSound(1)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji1.png?v=1615942898178" />
+      <img id="button2" onclick="guess(2)" onmousedown="playSound(2)" onmouseup="stopSound(2)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji2.png?v=1615942897811" />
+      <img id="button3" onclick="guess(3)" onmousedown="playSound(3)" onmouseup="stopSound(3)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji3.png?v=1615942897885" />
+      <img id="button4" onclick="guess(4)" onmousedown="playSound(4)" onmouseup="stopSound(4)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji4.png?v=1615942898112" />
+      <img id="button5" onclick="guess(5)" onmousedown="playSound(5)" onmouseup="stopSound(5)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji5.png?v=1615942898043" />
+      <img id="button6" onclick="guess(6)" onmousedown="playSound(6)" onmouseup="stopSound(6)" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Femoji6.png?v=1615942898595" />
+    </div>
+    
+    <table id="match-history">
+      <tr>
+        <th>Past Game (sorted by recency)</th>
+        <th>Score</th>
+      </tr>
+    </table>
+    
+    <audio id="sound1" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fdo.wav?v=1615945832350" />
+    <audio id="sound2" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fre.wav?v=1615945832747" />
+    <audio id="sound3" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fmi.wav?v=1615945832803" />
+    <audio id="sound4" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Ffa.wav?v=1615945833042" />
+    <audio id="sound5" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fsol.wav?v=1615945832370" />
+    <audio id="sound6" src="https://cdn.glitch.com/0f675381-666a-4fc0-bc04-1fca44195309%2Fla.wav?v=1615945832521" />
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
