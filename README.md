@@ -6,7 +6,7 @@ Submitted by: Claude Yan
 
 Time spent: 5 hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/codepath-intern-prework)
 
 ## Required Functionality
 
