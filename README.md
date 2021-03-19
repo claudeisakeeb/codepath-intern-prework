@@ -42,9 +42,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 - Setting number of strikes + Setting number of rounds + Playing and winning game + Match history
-<img src="http://g.recordit.co/vjQHKSPF5f.gif" width=200><br>
+
+<img src="http://g.recordit.co/vjQHKSPF5f.gif" width=1000><br>
 - Letting timer run out and losing
-<img src="http://g.recordit.co/FMCNBST3y4.gif" width=200><br>
+
+<img src="http://g.recordit.co/FMCNBST3y4.gif" width=1000><br>
 
 
 ## Reflection Questions
